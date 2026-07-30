@@ -40,7 +40,7 @@ jobs:
       # 初始化CodeQL分析环境
       # 配置C#语言支持并启用自动构建模式
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v4
+        uses: github/codeql-action/init@v4.37.3
         with:
           languages: csharp
           build-mode: autobuild
@@ -48,4 +48,4 @@ jobs:
       # 执行CodeQL代码分析
       # 运行静态分析并生成结果报告
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v4
+        uses: github/codeql-action/analyze@v4.37.3
